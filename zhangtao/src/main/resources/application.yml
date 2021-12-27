@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/mytest?serverTimezone=UTC&characterEnconding=utf-8
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+server:
+
+  port: 8080
+mybatis:
+  # 扫描****mapper.xml的配置在哪里
+  mapper-locations: classpath:mapper/*.xml
+
